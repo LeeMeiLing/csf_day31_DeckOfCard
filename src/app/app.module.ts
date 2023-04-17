@@ -14,7 +14,7 @@ import { PlayerComponent } from './components/player.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [PlayerComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,5 +1,6 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output } from '@angular/core';
 import { Card } from '../models';
+import { Subject } from 'rxjs';
 
 @Component({
   selector: 'app-player',
@@ -9,10 +10,18 @@ import { Card } from '../models';
 export class PlayerComponent {
 
   @Input()
-  name: string | undefined
+  name: string = "fred"
 
   @Input()
   hand:Card[]=[]
 
+  @Output()
+  selected = new Subject<string>
+
+  selectPlayer(){
+    this.selected.next(this.name)
+  }
+
+  
 
 }

@@ -1,4 +1,7 @@
 <h1>Deck of Cards</h1>
 
 <app-deck-of-card (onCardSelection)="newCard($event)"></app-deck-of-card>
-<app-player [name]="'Fred'" [hand]="playerHand"></app-player>
+<app-player [name]="'Fred'" [hand]="playerHand1" (selected)="playerSelected($event)"></app-player>
+<app-player [name]="'Barney'" [hand]="playerHand2" (selected)="playerSelected($event)"></app-player>
+<app-player [name]="'Wilma'" [hand]="playerHand3" (selected)="playerSelected($event)"></app-player>
+<app-player [name]="'Betty'" [hand]="playerHand4" (selected)="playerSelected($event)"></app-player>

@@ -1,6 +1,6 @@
 <div>
     <!-- <img src="/assets/images/Back.png" alt="" (click)="cards.take()"> -->
-   <h2>{{name}}'s hand</h2>
+   <h2 (click)="selectPlayer()">{{name}}'s hand</h2>
     <img *ngFor="let c of hand" src="/assets/images/{{c.suit | titlecase}}/card_{{c.value}}_{{c.suit | lowercase}}.png" alt="">
    
 </div>
