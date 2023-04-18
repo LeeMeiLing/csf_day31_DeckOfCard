@@ -1,6 +1,5 @@
 import { Component, Output } from '@angular/core';
 import { Card } from './models';
-import { PlayerComponent } from './components/player.component';
 
 @Component({
   selector: 'app-root',
